@@ -33,6 +33,7 @@ h2{
 
 p{
     font-size: 30px;
+    margin-left: 15;
 }
 
 .past-exhibitions{
@@ -56,5 +57,10 @@ section .row img {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 17vw);
   grid-gap: 15px;
-  flex-wrap: wrap;
-}
+  }
+
+  .container {
+    font-size: 23px;
+    font-weight: 600;
+    
+  }
