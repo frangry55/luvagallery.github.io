@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="artists.css">
+
+  <title>Cedar Lewisohn</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Cedar Lewisohn</h2>
+      <h3>HOLLYWOOD HOUSE</h3>
+        <p>For his project at Lock Up Visual Arts, Cedar Lewisohn will present a new series of drawings which explore architectural scenes from the area of social housing where the exhibition will take place. The drawings will also include images from Lewisham in South London were the artist lives. Juxtaposed with the architectural imagery are various figures from the Benin collections at the British Museum. The characters from Benin are often holding knives or weapons. The mixing of 21 century London, and relief sculptures from the 16th century can be seen a comment on urban environments and their effect on our contemporary psyche, with particular reference to the black male body. The works seek to question media and government statements about UK knife crime, and knife crime in London, with particular reference to recent condemnation of the music genre “Drill”.
+The exhibition title, Hollywood House, is a direct reference to Thomas Hollywood House, the 1960’s tower block where the exhibition will take place.<br>
+The project will be for one night only, and will also include a Jamaican Ital soup, made from a recipe provided by Cedar in collaboration with chef The White Brothers.
+<br><br>
+Cedar Lewisohn is an artist, curator and writer. He has worked on many museum projects in UK and internationally. His work is in various private and public collections. His most recent solo exhibitions include Exeter Phoenix (UK), and Joey Ramone Gallery, Rotterdam (NL)
+<br><br>
+          <a href="http://www.cedarlewisohn.com/?fbclid=IwAR0_yiVckpR5qUM966Fo0jra_3I77B2IKLHxpx35XRCnAT83ltP3HGhKfyk">Cedar Lewisohn Website</a>
+    </div>
+
+    <div class="container">
+        <div class="center">
+        <div class="row">
+            
+            
+             
+          <figure class="col-md-5">
+            <img id="cedarLewisohn1" class="thumbnail" src="assets/cedarLewisohn/1.jpg" style="height: 200; width: 300;";>
+          </figure>
+               
+          <figure class="col-md-5">
+              <img id="cedarLewisohn2" class="thumbnail" src="assets/cedarLewisohn/2.jpg" style="height: 300; width: 200;";>
+          </figure>
+             
+          <figure class="col-md-5">
+              <img id="cedarLewisohn3" class="thumbnail" src="assets/cedarLewisohn/3.jpg" style="height: 300; width: 200;";>
+          </figure>
+               
+        </div>
+          </div>
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+      
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img1">
+        <img class="modal-content" id="img2">
+        <img class="modal-content" id="img3">
+        <img class="modal-content" id="img4">
+        <img class="modal-content" id="img5">
+        
+        <!-- Modal Caption (Image Text) -->
+        <!-- <div id="caption"></div> -->
+      </div>
+
+     
+
+      <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("cedarLewisohn1");
+var modalImg = document.getElementById("img1");
+
+//var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  //captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+      </script>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("cedarLewisohn2");
+    var modalImg = document.getElementById("img2");
+    
+    //var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      //captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+          </script>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("cedarLewisohn3");
+    var modalImg = document.getElementById("img3");
+    
+    //var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      //captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+          </script>
+
+
+<div><p style="text-align:center;">
+  <video width="700" height="auto" controls>
+    <source src="assets/interviews/Cedar.mp4" type="video/mp4">
+  </video>
+</p>  
+<p style="text-align:center;"><strong>Interview with Cedar</strong></p>
+<br>
+</div>
+
+</body>
