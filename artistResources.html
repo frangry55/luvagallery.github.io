@@ -8,56 +8,78 @@
       <link rel="stylesheet" type="text/css" href="artists.css">
     
       <title>Artist Resources</title>
+      <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+      <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+<style>
+
+  model-viewer{
+width:400;
+height:400;
+margin-left: auto;
+margin-right:auto;
+  }
+
+  .button {
+    transition-duration: 0.4s;
+    font-size: 24px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block-start: 10px;
+    width: 80%;
+  }
+  
+  .button:hover {
+    background-color:  chartreuse;
+    color: white;
+  }
+  
+  body{
+    padding-left:100px; 
+    padding-right:100px;
+  }
+  
+  p1{
+    font-size: 20px; 
+    font-family:Impact, Charcoal, Sans-serif; 
+    color:chartreuse;
+  }
+  
+  p2{
+    font-size:25px; 
+    font-family:Impact, Charcoal,Sans-serif; 
+    color:black;
+  }
+  
+  p3{
+    font-size:20px;
+  }
+  
+              </style>
+
     </head>
 
     <body>
         <div class="container">
 
-            <style>
-
-.button {
-  transition-duration: 0.4s;
-  font-size: 24px;
-  color: white;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-block-start: 10px;
-  width: 80%;
-}
-
-.button:hover {
-  background-color:  chartreuse;
-  color: white;
-}
-
-body{
-  padding-left:100px; 
-  padding-right:100px;
-}
-
-p1{
-  font-size: 20px; 
-  font-family:Impact, Charcoal, Sans-serif; 
-  color:chartreuse;
-}
-
-p2{
-  font-size:25px; 
-  font-family:Impact, Charcoal,Sans-serif; 
-  color:black;
-}
-
-p3{
-  font-size:20px;
-}
-
-            </style>
+           
 
 <h2>Artist Resources</h2>
 <p2>Our <strong>ARTIST  RESOURCES</strong> page hosts a range of resources shared by artists who have previously exhibited and are currently exhibiting at LUVA</p2>
 
+<div>
+  <p3>LUVA 3D Model</p3>
+  <br>
+  <p>A digital model of LUVA gallery. The model can be downloaded and imported into Blender or whichever 3D modelling software available to you. Please feel free to insert your own works and collaborations into the space and send us back an exported version of your own LUVA exhibition to luvagallery@outlook.com . If you are new to 3D modelling, please see our below tutorial for downloading and importing the LUVA model into Blender, a free and open-sourced software.</p>
+<br>
 
+<model-viewer src="assets/resources/Luva_Gallery_website2.glb" camera-controls shadow-intensity="3.6" exposure="0.66" shadow-softness="0.47">
+
+</model-viewer>
+
+</div>
 
         </div>
 
