@@ -1,21 +1,99 @@
-<html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-      <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="artists.css">
-    
-      <title>Read</title>
-    </head>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="artists.css">
 
-    <body>
+<title>READ PAGE</title>
 
-        <div class="containter">
+<style>
 
-          <style>
-                        .button {
+ /* Slideshow container */
+ .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 10000s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+</style>
+</head>
+
+
+      <head>
+        <style>
+             /* Slideshow container */
+             body{background-color:white;}
+             h2{
+    font-size: 35px;
+    color: chartreuse;
+    font-family: Impact, Charcoal, sans-serif;
+    line-height: 30px;
+    margin-left: 15;
+}
+
+h3{
+  font-size:28px;
+  color: chartreuse;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+    p2{
+        font-size:40px; 
+        font-family:Impact, Charcoal, Sans-Serif;
+    }
+    p3{
+        font-size:20px; 
+         
+        color:black;
+    }
+     
+    .button {
   transition-duration: 0.4s;
   font-size: 24px;
   color: white;
@@ -30,103 +108,742 @@
   background-color:  chartreuse;
   color: white;
 }
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color:chartreuse;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Caption text */
+    .text {
+      color:chartreuse;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom:20px;
+      width: 100%;
+      text-align: center;
+      font-family:Impact;
+    }
+    .mySlides {
+      display:none;
+    }
+    .active-slide {
+      display:block;
+    }
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: RGB(50,50,50);
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor:pointer;
+      height: 13px;
+      width: 13px;
+      margin: 0 2px;
+      background-color: rgb(92, 88, 88);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: .5s;
+      animation-name: fade;
+      animation-duration: 700s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: 1}
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: 1}
+      to {opacity: 1}
+    }
 
-body{
-  padding-left:100px; 
-  padding-right:100px;
-}
+        
+    .as-console-row { display: table-row; font-family: monospace; font-size: 13px; }
+    .as-console-row:after { display: table-cell; padding: 3px 6px; color: rgba(0,0,0,.35); border: 1px solid #ccc; content: attr(data-date); vertical-align: top; }
+    .as-console-row + .as-console-row > * { border: 1px solid #ccc; }
+    .as-console-row-code { width: 100%; white-space: pre-wrap; padding: 3px 5px; display: table-cell; font-family: monospace; font-size: 13px; vertical-align: middle; }
+    .as-console-error:before { content: 'Error: '; color: #f00; }
+    .as-console-assert:before { content: 'Assertion failed: '; color: #f00; }
+    .as-console-info:before { content: 'Info: '; color: #00f; }
+    .as-console-warning:before { content: 'Warning: '; color: #e90 }
+    @-webkit-keyframes flash { 0% { background: rgba(255,240,0,.25); } 100% { background: none; } }
+    @-moz-keyframes flash { 0% { background: rgba(255,240,0,.25); } 100% { background: none; } }
+    @-ms-keyframes flash { 0% { background: rgba(255,240,0,.25); } 100% { background: none; } }
+    @keyframes flash { 0% { background: rgba(255,240,0,.25); } 100% { background: none; } }
+    .as-console-row-code, .as-console-row:after { -webkit-animation: flash 1s; -moz-animation: flash 1s; -ms-animation: flash 1s; animation: flash 1s; }</style>
+    </style>
+</head>
 
-p1{
-  font-size: 20px; 
-  font-family:Impact, Charcoal, Sans-serif; 
-  color:chartreuse;
-}
+        <body>
+            <div class="container">
+                <br>
+                <h2>Resources for your eyeballs</h2>
+               
+                <p3 style="font-size:25px">On our READ page you'll find a selection of text pieces such as articles and interviews, as well as longer text extracts from our own LUVA Zine</p3>
+                <br>
+                <br>
+                <br>
+                <h3><light>LUVA Zine, edition 1: Artists in Lockdown Open Call</light></h3>
+                <p3><span style="color:RGB(10S)">You can buy a physical copy of the first edition of the LUVA zine <span style="color:red">(here???)</span>. This edition is compiled from submissions from an open call for artists to respond to the Covid-19 pandemic</span></p3>
+            <br><br>
 
-p2{
-  font-size:25px; 
-  font-family:Impact, Charcoal,Sans-serif; 
-  color:black;
-}
+            <div class="container">
+              <p2>Alice Olausson</p2>
+              <p style="text-align:center">
+              <img src="assets/zine_images/aliceOlausson.jpg" style="width:50%"></p>
+            </div>
+        
+            <p2>LILY STEVENS</p2>
+        
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <p style="text-align:center"><img src="assets/resources/lilyS1.jpg" style="width:50%"></p>
+                  <br>
+                  <div class="text">Lily Stevens</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <p style="text-align:center"><img src="assets/resources/lilyS2.jpg" style="width:50%"></p>
+                  <br>
+                  <div class="text">Lily Stevens</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <p style="text-align:center"><img src="assets/resources/lilyS3.jpg" style="width:50%"></p>
+                  <br>
+                  <div class="text">Lily Stevens</div>
+                </div>
+              
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+              
+              <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+              </div>
+              </div>
+              <br>
+              
+              <div class="container">
+                <p2>Elizabeth Forbes</p2>
+                <p style="text-align:center">
+                <img src="assets/zine_images/elizabethForbes.jpg" style="width:50%"></p>
+              </div>
 
-p3{
-  font-size:20px;
-}
-          </style>
-          
-<h2>Resources for your eyeballs</h2>
+              <div class="container">
+                <p2>Jan Pan Jan</p2>
+                <p style="text-align:center">
+                <img src="assets/zine_images/janPanJan1.jpg" style="width:50%">
+              <br>
+              <img src="assets/zine_images/janPanJan2.jpg" style="width:50%">
+            </p>
+              </div>
 
-<p2>On our <strong>READ</strong> page you'll find a selection of text pieces as well as longer text extracts from our own LUVA Zine</p2>
-<br><br><br>
-<p3>ZINE EDITION 1: LOCKDOWN OPEN CALL</p3>
-<br><br>
-<p1>Lily Stevens:</p1>
-<div class="center">
-<div class="row">
-  <div class="col-md-4">
-    <img src="assets/resources/lilyS1.jpg" width="400px" height="auto">
-  </div>
-  <div class="col-md-4">
-    <img src="assets/resources/lilyS2.jpg" width="400px" height="auto">
-  </div>
-  <div class="col-md-4">
-    <img src="assets/resources/lilyS3.jpg" width="400px" height="auto">
-  </div>
+              <p2>AMY JACKSON</p2>
+              
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <p style="text-align:center"><img src="assets/resources/amyJackson1.jpg" style="width:50%"></p>
+                  <br>
+                  <div class="text">Amy Jackson</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <p style="text-align:center"><img src="assets/resources/amyJackson2.jpg" style="width:50%"></p>
+                  <br>
+                  <div class="text">Amy Jackson</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <p style="text-align:center"><img src="assets/resources/amyJackson3.jpg" style="width:50%"></p>
+                  <br>
+                  <div class="text">Amy Jackson</div>
+                </div>
+              
+                <a class="prev" >&#10094;</a>
+                <a class="next">&#10095;</a>
+              <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>  
+              </div>
+                   
+              <p2>CONSTANCE HATICE</p2>
+        
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <p style="text-align:center"><img src="assets/resources/constanceHatice1.jpg" style="width:50%; text-align:center;"></p>
+                  <br>
+                  <div class="text">Constance Hatice</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <p style="text-align:center"><img src="assets/resources/constanceHatice2.jpg" style="width:50%"></p>
+                  <br>
+                  <div class="text">Constance Hatice</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <p style="text-align:center"><img src="assets/resources/constanceHatice3.jpg" style="width:50%"></p>
+                  <br>
+                  <div class="text">Constance Hatice</div>
+                </div>
+              
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+              
+              <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+              </div>
+              </div>
+              <br>
 
-</div>
-</div>
-<br>
-<div class="row">
-  <div class="col-md-6">
-  <p1>Jo Parker:</p1>
- 
-  <img src="assets/resources/joParker.jpg" width="600" height="auto">
-  </a>
-</div>
-<div class="col-md-6">
-  <p1>Sanna Sønstebø</p1>
+              <div class="container">
+                <p2>Sanna Sønstebø</p2>
+                <p style="text-align:center">
+                <img src="assets/resources/SannaS.jpg" style="width:50%"></p>
+              </div>
 
-<img src="assets/resources/SannaS.jpg" width="600" height="auto">
-</div>
-</div>
-        </div>
+              <div class="container">
+                <p2>Kio Griffith</p2>
+                <p style="text-align:center">
+                <img src="assets/zine_images/kioGriffith.jpg" style="width:50%"></p>
+              </div>
+            
+              <p2>OLIVIA TESS RUSSELL</p2>
+        
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 16</div>
+                  <p style="text-align:center"><img src="assets/resources/oliviaTR1.jpg" style="width:50%;"></p>
+                  <br>
+                  <div class="text">Olivia Tess Russell</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 16</div>
+                  <p style="text-align:center"><img src="assets/resources/oliviaTR2.jpg" style="width:50%"></p>
+                  <br>
+                  <div class="text">Olivia Tess Russell</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 16</div>
+                  <p style="text-align:center"><img src="assets/resources/oliviaTR3.jpg" style="width:50%"></p>
+                  <br>
+                  <div class="text">Olivia Tess Russell</div>
+                </div>
 
-<div class="row">
-  <div class="col-md-4">
-    <p1>Amy Jackson:</p1>
-    <img src="assets/resources/amyJackson1.jpg" width="400" height="auto">
-  </div>
-  <div class="col-md-4">
-    <img src="assets/resources/amyJackson2.jpg" width="400" height="auto">
-  </div>
-  <div class="col-md-4">
-    <img src="assets/resources/amyJackson3.jpg" width="400" height="auto">
-  </div>
-  <div class="col-md-4">
-    <img src="assets/resources/amyJackson4.jpg" width="400" height="auto">
-  </div>
-  <div class="col-md-4">
-    <img src="assets/resources/amyJackson5.jpg" width="400" height="auto">
-  </div>
-  <div class="col-md-4">
-    <img src="assets/resources/amyJackson6.jpg" width="400" height="auto">
-  </div>
-  <div class="col-md-4">
-    <img src="assets/resources/amyJackson7.jpg" width="400" height="auto">
-  </div>
-  <div class="col-md-4">
-    <img src="assets/resources/amyJackson8.jpg" width="400" height="auto">
-  </div>
-</div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 16</div>
+                    <p style="text-align:center"><img src="assets/resources/oliviaTR4.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">Olivia Tess Russell</div>
+                  </div>
 
-        <div>
-          <button class="button" onclick="goBack()">Go Back</button>
-          </div>
-          </body>
-      
-      <script>
-      function goBack() {
-        window.history.back();
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 16</div>
+                    <p style="text-align:center"><img src="assets/resources/oliviaTR5.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">Olivia Tess Russell</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">6 / 16</div>
+                    <p style="text-align:center"><img src="assets/resources/oliviaTR6.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">Olivia Tess Russell</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">7 / 16</div>
+                    <p style="text-align:center"><img src="assets/resources/oliviaTR7.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">Olivia Tess Russell</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">8 / 16</div>
+                    <p style="text-align:center"><img src="assets/resources/oliviaTR8.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">Olivia Tess Russell</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">9 / 16</div>
+                    <p style="text-align:center"><img src="assets/resources/oliviaTR9.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">Olivia Tess Russell</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">10 / 16</div>
+                    <p style="text-align:center"><img src="assets/resources/oliviaTR10.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">Olivia Tess Russell</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">11 / 16</div>
+                    <p style="text-align:center"><img src="assets/resources/oliviaTR11.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">Olivia Tess Russell</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">12 / 16</div>
+                    <p style="text-align:center"><img src="assets/resources/oliviaTR12.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">Olivia Tess Russell</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">13 / 16</div>
+                    <p style="text-align:center"><img src="assets/resources/oliviaTR13.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">Olivia Tess Russell</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">14 / 16</div>
+                    <p style="text-align:center"><img src="assets/resources/oliviaTR14.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">Olivia Tess Russell</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">15 / 16</div>
+                    <p style="text-align:center"><img src="assets/resources/oliviaTR15.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">Olivia Tess Russell</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">16 / 16</div>
+                    <p style="text-align:center"><img src="assets/resources/oliviaTR16.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">Olivia Tess Russell</div>
+                  </div>
+              
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+              
+              <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+                <span class="dot" ></span>
+              </div>
+              </div>
+              <br>
+              
+              <div class="container">
+                <p2>Jo Parker</p2>
+                <p style="text-align:center">
+                <img src="assets/resources/joParker.jpg" style="width:50%"></p>
+              </div>
+
+              <div class="container">
+                <p2>Sarah Roberts</p2>
+                <p style="text-align:center">
+                <img src="assets/zine_images/sarahRoberts.jpg" style="width:50%"></p>
+              </div>
+
+              <p2>GEORGE MILLERSHIP</p2>
+        
+              <div class="slideshow-container">
+                  <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <p style="text-align:center"><img src="assets/resources/georgeMillership1.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">George Millership</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <p style="text-align:center"><img src="assets/resources/georgeMillership2.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">George Millership</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <p style="text-align:center"><img src="assets/resources/georgeMillership3.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">George Millership</div>
+                  </div>
+                
+                  <a class="prev">&#10094;</a>
+                  <a class="next">&#10095;</a>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span>
+                  <span class="dot" ></span>
+                  <span class="dot" ></span>
+                </div>
+                </div>
+                <br>
+              </div>
+
+              <div class="container">
+                <p2>Sophie Taylor</p2>
+                <p style="text-align:center">
+                <img src="assets/zine_images/sophieTaylor.jpg" style="width:50%"></p>
+              </div>
+
+              <div class="container">
+                <p2>Beenish Saraz</p2>
+                <p style="text-align:center">
+                <img src="assets/resources/beenishSaraz.jpg" style="width:50%"></p>
+              </div>
+
+              <div class="container">
+              <p2>LAURA CAREY</p2>
+            </div>
+            
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 2</div>
+                  <p style="text-align:center"><img src="assets/resources/lauraCarey1.jpg" style="width:50%"></p>
+                  <br>
+                  <div class="text">Laura Carey</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 2</div>
+                  <p style="text-align:center"><img src="assets/resources/lauraCarey2.jpg" style="width:50%"></p>
+                  <br>
+                  <div class="text">Laura Carey</div>
+                </div>
+              
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+              
+              <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot" ></span>
+              </div>
+              </div>
+              <br>
+
+              <div class="container">
+                <p2>LILY TONKIN-WELLS</p2>
+              </div>
+              
+              <div class="slideshow-container">
+                  <div class="mySlides fade">
+                    <div class="numbertext">1 / 2</div>
+                    <p style="text-align:center"><img src="assets/resources/lilyTW1.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">Lily Tonkin-Wells</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 2</div>
+                    <p style="text-align:center"><img src="assets/resources/lilyTW2.jpg" style="width:50%"></p>
+                    <br>
+                    <div class="text">Lily Tonkin-Wells</div>
+                  </div>
+                
+                  <a class="prev">&#10094;</a>
+                  <a class="next">&#10095;</a>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span>
+                  <span class="dot" ></span>
+                </div>
+                </div>
+                <br>
+
+                <div class="container">
+                  <p2>Siena Barnes</p2>
+                  <p style="text-align:center">
+                  <img src="assets/zine_images/sienaBarnes.jpg" style="width:50%"  >
+                </p>
+                </div>
+
+                <div class="container">
+                  <p2>Kun Fang</p2>
+                  <p style="text-align:center">
+                  <img src="assets/zine_images/kunFang.jpg" style="width:50%"></p>
+                </div>
+
+                <div class="container">
+                  <p2>SAND THWAITES</p2>
+                </div>
+                
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <p style="text-align:center"><img src="assets/resources/sandThwaites1.jpg" style="width:50%"></p>
+                      <br>
+                      <div class="text">Sand Thwaites</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <p style="text-align:center"><img src="assets/resources/sandThwaites2.jpg" style="width:50%"></p>
+                      <br>
+                      <div class="text">Sand Thwaites</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <p style="text-align:center"><img src="assets/resources/sandThwaites3.jpg" style="width:50%"></p>
+                      <br>
+                      <div class="text">Sand Thwaites</div>
+                    </div>
+                  
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+                  
+                  <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot" ></span>
+                    <span class="dot" ></span>
+                  </div>
+                  </div>
+                  <br>
+
+                  <div class="container">
+                    <p2>Ally Cardone</p2>
+                    <p style="text-align:center">
+                      <img src="assets/zine_images/allyCardone1.jpg" style="width:50%">
+                      <br>
+                      <img src="assets/zine_images/allyCardone2.jpg" style="width:50%">
+                    </p>
+                  </div>
+
+                  <div class="container">
+                    <p2>Shruti Chawan</p2>
+                    <p style="text-align:center">
+                    <img src="assets/zine_images/shrutiChawan.jpg" style="width:50%"></p>
+                  </div>
+
+                  <div class="container">
+                    <p2>SUSAN PLOVER</p2>
+                  </div>
+
+                  <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 5</div>
+                      <p style="text-align:center"><img src="assets/resources/susanPlover1.jpg" style="width:50%"></p>
+                      <br>
+                      <div class="text">Susan Plover</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 5</div>
+                      <p style="text-align:center"><img src="assets/resources/susanPlover2.jpg" style="width:50%"></p>
+                      <br>
+                      <div class="text">Susan Plover</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 5</div>
+                      <p style="text-align:center"><img src="assets/resources/susanPlover3.jpg" style="width:50%"></p>
+                      <br>
+                      <div class="text">Susan Plover</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 5</div>
+                      <p style="text-align:center"><img src="assets/resources/susanPlover4.jpg" style="width:50%"></p>
+                      <br>
+                      <div class="text">Susan Plover</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">5 / 5</div>
+                      <p style="text-align:center"><img src="assets/resources/susanPlover5.jpg" style="width:50%"></p>
+                      <br>
+                      <div class="text">Susan Plover</div>
+                    </div>
+
+                  <a class="prev">&#10094;</a>
+                  <a class="next">&#10095;</a>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span>
+                  <span class="dot" ></span>
+                  <span class="dot" ></span>
+                  <span class="dot" ></span>
+                  <span class="dot" ></span>
+                </div>
+              </div>
+                <br>
+
+                <div class="container">
+                  <p2>Anu Ahuja</p2>
+                  <p style="text-align:center">
+                  <img src="assets/resources/anuAhuja.jpg" style="width:50%"></p>
+                </div>
+
+                <div class="container">
+                  <p2>Aidan Strudwick</p2>
+                 <p style="text-align:center"> <img src="assets/zine_images/aidanStrudwick.jpg" style="width:50%"></p>
+                 <br>
+                </div>
+
+        <script type="text/javascript">
+            (function() {
+    
+      init(); //on page load - show first slide, hidethe rest
+    
+      function init() {
+    
+        parents = document.getElementsByClassName('slideshow-container');
+    
+        for (j = 0; j < parents.length; j++) {
+          var slides = parents[j].getElementsByClassName("mySlides");
+          var dots = parents[j].getElementsByClassName("dot");
+          slides[0].classList.add('active-slide');
+          dots[0].classList.add('active');
+        }
       }
-      </script>
+    
+      dots = document.getElementsByClassName('dot'); //dots functionality
+    
+      for (i = 0; i < dots.length; i++) {
+    
+        dots[i].onclick = function() {
+    
+          slides = this.parentNode.parentNode.getElementsByClassName("mySlides");
+    
+          for (j = 0; j < this.parentNode.children.length; j++) {
+            this.parentNode.children[j].classList.remove('active');
+            slides[j].classList.remove('active-slide');
+            if (this.parentNode.children[j] == this) {
+              index = j;
+            }
+          }
+          this.classList.add('active');
+          slides[index].classList.add('active-slide');
+    
+        }
+      }
+    //prev/next functionality
+      links = document.querySelectorAll('.slideshow-container a');
+    
+      for (i = 0; i < links.length; i++) {
+        links[i].onclick = function() {
+          current = this.parentNode;
+    
+          var slides = current.getElementsByClassName("mySlides");
+          var dots = current.getElementsByClassName("dot");
+          curr_slide = current.getElementsByClassName('active-slide')[0];
+          curr_dot = current.getElementsByClassName('active')[0];
+          curr_slide.classList.remove('active-slide');
+          curr_dot.classList.remove('active');
+          if (this.className == 'next') {
+    
+            if (curr_slide.nextElementSibling.classList.contains('mySlides')) {
+              curr_slide.nextElementSibling.classList.add('active-slide');
+              curr_dot.nextElementSibling.classList.add('active');
+            } else {
+              slides[0].classList.add('active-slide');
+              dots[0].classList.add('active');
+            }
+    
+          }
+    
+          if (this.className == 'prev') {
+    
+            if (curr_slide.previousElementSibling) {
+              curr_slide.previousElementSibling.classList.add('active-slide');
+              curr_dot.previousElementSibling.classList.add('active');
+            } else {
+              slides[slides.length - 1].classList.add('active-slide');
+              dots[slides.length - 1].classList.add('active');
+            }
+    
+          }
+    
+        }
+    
+      }
+    })();
+        </script>
+    
+    <div class="as-console-wrapper"><div class="as-console"></div></div>
+    <div>
+        <button class="button" onclick="goBack()">Go Back</button>
+        </div>
+        </body>
+    
+    <script>
+    function goBack() {
+      window.history.back();
+    }
+    </script>
 <br><br>
-    </body>
+</body>
+</html>
